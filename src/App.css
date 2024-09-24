@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color:#282D35 ;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color:   rgb(147, 141, 141);
+  color: black;
+  padding: 10px;
+  position:relative ;
+}
+
+img {
+  align-items: center;
+  height: 30px;
+}
+
+nav > h3 {
+  margin-right: 30px;
+  margin-left: 10px;
+  color: #61DAF8;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.toggler{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  color: #61DAF8;
+}
+
+.toggler-black, 
+.toggler-light{
+margin-right: 01px;
+}
+
+.toggler-slider{
+  background: black;
+  border-radius: 10px;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  background-color: #2b2b2b;
+  display: block;
+  cursor: pointer;
+}
+
+.dark div.toggler-slider{
+  background-color: black;
+}
+
+
+.toggler-circle{
+  height: 20px;
+  width: 20px;
+  right: 20px;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  transition: .1s; 
+}
+
+.dark div.toggler-circle {
+  background-color: white;
+  left: 20px;
+}
+
+.dark {
+  background: #2b2b2b;
+  color: white;
+}
+
+main{
+  color: black;
+  background: white;
+  height: 100vh;
+  padding: 57px 27px;
+  background-position: right 75px;
+
+}
+
+main > h1{
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+main > ul > li{ 
+  margin-top: 10px;
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+
+main > ul > li::marker { 
+  font-size: 1.4rem;
+  color: #61DAF8;  
+}
